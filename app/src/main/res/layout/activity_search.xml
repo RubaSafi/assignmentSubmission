@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/searchLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/searchLogoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center" />
+
+        <!-- Keyword Input -->
+        <TextView
+            android:id="@+id/keywordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter ingredients or recipe name:"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/keywordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g., chicken, salad"
+            android:inputType="text" />
+
+        <!-- Meal Type Spinner -->
+        <TextView
+            android:id="@+id/mealTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select meal type:"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/mealTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Dietary Preferences RadioGroup -->
+        <TextView
+            android:id="@+id/dietaryPreferenceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietary preference:"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <RadioGroup
+            android:id="@+id/dietaryRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anyDietRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any" />
+
+            <RadioButton
+                android:id="@+id/veganRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegan" />
+
+            <RadioButton
+                android:id="@+id/vegetarianRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian" />
+
+            <RadioButton
+                android:id="@+id/paleoRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paleo" />
+        </RadioGroup>
+
+        <!-- Additional Dietary Options CheckBoxes -->
+        <TextView
+            android:id="@+id/additionalOptionsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional dietary options:"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <CheckBox
+            android:id="@+id/glutenFreeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gluten-Free" />
+
+        <CheckBox
+            android:id="@+id/dairyFreeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dairy-Free" />
+
+        <CheckBox
+            android:id="@+id/nutFreeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nut-Free" />
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/searchRecipesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Recipes"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+</ScrollView>

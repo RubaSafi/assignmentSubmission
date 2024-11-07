@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recipeDetailScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recipeDetailConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/recipeImageView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/placeholder_image" />
+
+        <!-- Recipe Name -->
+        <TextView
+            android:id="@+id/recipeNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Recipe Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            app:layout_constraintTop_toBottomOf="@id/recipeImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Ingredients Label -->
+        <TextView
+            android:id="@+id/ingredientsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/recipeNameTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <!-- Ingredients Text -->
+        <TextView
+            android:id="@+id/ingredientsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="List of ingredients"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/ingredientsLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Instructions Label -->
+        <TextView
+            android:id="@+id/instructionsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ingredientsTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <!-- Instructions Text -->
+        <TextView
+            android:id="@+id/instructionsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cooking instructions"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/instructionsLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

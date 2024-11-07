@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HealthyMealPlanner</string>
+
+    <!-- Meal Type Array -->
+    <string-array name="meal_type_array">
+        <item>Any</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snacks</item>
+    </string-array>
+</resources>
